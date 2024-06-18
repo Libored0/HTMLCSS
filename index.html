@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Html e Css</title>
+</head>
+<body>
+    <header>
+        <img src="2.png" alt="Logo 1" class="header-logo left">
+        <h1 class="h1header"> Html e Css</h1>
+        <div class="filter-section">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="deuteranomaly">Deuteranomalia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+                <option value="acromatomy">Acromatomia</option>
+                <option value="deuteranopy">Deuteranopia</option>
+                <option value="protanopy">Protanopia</option>
+            </select>
+            <button class="font-control" id="increase-font">A+</button>
+            <button class="font-control" id="decrease-font">A-</button>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+        <img src="1.png" alt="Logo 2" class="header-logo right">
+    </header>
+
+    <div class="blocos">
+        <div class="bloco1">
+            <h1>HTML</h1>
+            <p>Imagine HTML como blocos de construção que você usa para montar uma casa (ou página web). Cada bloco tem uma função específica: alguns são para colocar texto, outros para imagens, botões ou até mesmo para agrupar e organizar informações. Esses blocos são organizados e interligados por meio de etiquetas HTML, que são como instruções que dizem ao navegador como mostrar o conteúdo para o usuário.</p>
+        </div>
+        <div class="bloco2">
+            <h1>CSS</h1>
+            <p>Você pode pensar no CSS como o pintor de uma casa. Ele define como cada elemento HTML deve ser apresentado visualmente: a cor do texto, o tamanho das fontes, o espaçamento entre os parágrafos, o posicionamento dos elementos na página e muito mais.</p>
+        </div>
+    </div>
+    <br>
+
+    <div class="blocos">
+        <div class="bloco3">
+            <h2>Como criar uma tabela em HTML e CSS?</h2>
+            <p><pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;Tabela Simples&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;table&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Nome&lt;/th&gt;
+                                &lt;th&gt;Idade&lt;/th&gt;
+                                &lt;th&gt;Cidade&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ana&lt;/td&gt;
+                                &lt;td&gt;28&lt;/td&gt;
+                                &lt;td&gt;São Paulo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;João&lt;/td&gt;
+                                &lt;td&gt;35&lt;/td&gt;
+                                &lt;td&gt;Rio de Janeiro&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Maria&lt;/td&gt;
+                                &lt;td&gt;22&lt;/td&gt;
+                                &lt;td&gt;Belo Horizonte&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                    &lt;style&gt;
+                        /* Estilos básicos para a tabela */
+                        table {
+                            width: 50%;
+                            border-collapse: collapse;
+                            margin: 20px auto;
+                            font-family: Arial, sans-serif;
+                        }
+                        th, td {
+                            padding: 8px;
+                            text-align: left;
+                            border: 1px solid #dddddd;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                        tr:nth-child(even) {
+                            background-color: #f9f9f9;
+                        }
+                    &lt;/style&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre></p>
+                <h2>Resultado</h2>
+                <img src="tabela.png" alt="Descrição da imagem 1" class="blk filter-image" width="100%">
+        </div>
+        <div class="bloco4">
+            <h2>Como criar um formulário em HTML e CSS?</h2>
+            <p><pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;pt-br&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;Formulário Simples&lt;/title&gt;
+                    &lt;style&gt;
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f0f0f0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                        }
+                
+                        .form-container {
+                            width: 300px;
+                            padding: 20px;
+                            background-color: #fff;
+                            border-radius: 8px;
+                            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                        }
+                
+                        .form-container h2 {
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                
+                        .form-group {
+                            margin-bottom: 15px;
+                        }
+                
+                        .form-group label {
+                            display: block;
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+                
+                        .form-group input, .form-group textarea {
+                            width: calc(100% - 20px);
+                            padding: 8px;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            font-size: 14px;
+                        }
+                
+                        .form-group textarea {
+                            resize: vertical; /* Permite redimensionamento vertical da textarea */
+                        }
+                
+                        .submit-btn {
+                            width: 100%;
+                            padding: 10px;
+                            background-color: #007bff;
+                            color: #fff;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            font-size: 16px;
+                            transition: background-color 0.3s ease;
+                        }
+                
+                        .submit-btn:hover {
+                            background-color: #0056b3;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class=&quot;form-container&quot;&gt;
+                        &lt;h2&gt;Formulário de Contato&lt;/h2&gt;
+                        &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;nome&quot;&gt;Nome:&lt;/label&gt;
+                                &lt;input type=&quot;text&quot; id=&quot;nome&quot; name=&quot;nome&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+                                &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;mensagem&quot;&gt;Mensagem:&lt;/label&gt;
+                                &lt;textarea id=&quot;mensagem&quot; name=&quot;mensagem&quot; rows=&quot;4&quot; required&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;submit-btn&quot;&gt;Enviar&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre></p>
+            <h2>Resultado</h2>
+            <img src="formulario.png" alt="Descrição da imagem 2" class="blk filter-image" width="300">
+            
+        </div>
+    </div>
+<br>
+<br>
+<br>
+    <div class="form-container">
+        <h2>Como adicionar texto, imagem e vídeo?</h2>
+            <p><h3>Texto</h3> <pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;pt-br&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;Exemplo de Texto&lt;/title&gt;
+                    &lt;style&gt;
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f0f0f0;
+                            padding: 20px;
+                        }
+                
+                        .texto {
+                            font-size: 18px;
+                            color: #333;
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class=&quot;texto&quot;&gt;
+                        &lt;h1&gt;Exemplo de Texto&lt;/h1&gt;
+                        &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre></p>
+            <h2>Resultado</h2>
+            <img src="texto.png" alt="Descrição da imagem 2" class="blk filter-image" width="300">
+                <p><h3>Imagem</h3></p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;pt-br&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;Exemplo de Imagem&lt;/title&gt;
+                    &lt;style&gt;
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f0f0f0;
+                            padding: 20px;
+                        }
+                
+                        .imagem {
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                
+                        .imagem img {
+                            width: 300px;
+                            height: auto;
+                            border-radius: 8px;
+                            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class=&quot;imagem&quot;&gt;
+                        &lt;h2&gt;Exemplo de Imagem&lt;/h2&gt;
+                        &lt;img src=&quot;exemplo.jpg&quot; alt=&quot;Exemplo de Imagem&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                <h2>Resultado</h2>
+            <img src="imagem.png" alt="Descrição da imagem 2" class="blk filter-image" width="300">
+                <p><h3>Vídeo do Youtube</h3></p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;pt-br&quot;&gt;
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;Vídeo do YouTube&lt;/title&gt;
+                    &lt;style&gt;
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f0f0f0;
+                            padding: 20px;
+                        }
+                
+                        .video-container {
+                            max-width: 800px;
+                            margin: 0 auto;
+                            text-align: center;
+                        }
+                
+                        .video-container iframe {
+                            width: 100%;
+                            height: 400px;
+                            border-radius: 8px;
+                            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class=&quot;video-container&quot;&gt;
+                        &lt;h2&gt;Vídeo do YouTube&lt;/h2&gt;
+                        &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/dQw4w9WgXcQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                <h2>Resultado</h2>
+            <img src="youtube.png" alt="Descrição da imagem 2" class="blk filter-image" width="300">
+                </div>
+            </div>
+    </div>
+
+    <!-- Início do código do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
