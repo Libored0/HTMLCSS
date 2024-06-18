@@ -85,7 +85,19 @@ body.dark-mode header {
     color: #000000;
 }
 
-.bloco3, .bloco4 {
+.bloco3 {
+    text-align: center;
+    border: 2px solid #415A77;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    width: 700px;
+    max-width: 100%; /* Limite máximo de largura */
+    background-color: #ffffff;
+    color: #000000;
+}
+
+ .bloco4 {
     text-align: center;
     border: 2px solid #415A77;
     border-radius: 20px;
