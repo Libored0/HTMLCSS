@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+PL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nabla&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+PL:wght@100..400&display=swap');
 
@@ -90,18 +91,19 @@ body.dark-mode header {
     border: 2px solid #415A77;
     border-radius: 20px;
     padding: 10px;
-    width: 650px;
+    width: 750px;
     max-width: 100%; /* Limite máximo de largura */
     background-color: #ffffff;
     color: #000000;
-
+}
     .bloco5{
     text-align: center;
     border: 2px solid #415A77;
     border-radius: 20px;
     padding: 10px;
-    width: 650px;
+    width: 800px;
     max-width: 100%; /* Limite máximo de largura */
+    margin-left: 500px;
     background-color: #ffffff;
     color: #000000;
     }
@@ -112,6 +114,11 @@ body.dark-mode .bloco3 {
 }
 
 body.dark-mode .bloco4 {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+body.dark-mode .bloco5 {
     background-color: #2c3e50;
     color: #ffffff;
 }
@@ -193,3 +200,4 @@ body.dark-mode .submit-btn {
 .filter-protanopy {
     filter: sepia(35%) saturate(100%);
 }
+
