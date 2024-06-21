@@ -1,0 +1,203 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+PL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nabla&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+PL:wght@100..400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+PL:wght@100..400&display=swap');
+
+/* Estilos gerais */
+body {
+    background-color: #f9fcf5;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+body.dark-mode {
+    background-color: #1b263b;
+    color: #ffffff;
+}
+
+header {
+    width: 100%;
+    background-color: #273550;
+    color: #ffff;
+    font-family: "Playwrite NG Modern", cursive;
+    -webkit-box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    -moz-box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 30px; /* Adiciona espaço entre os blocos */
+}
+
+/* Estilos para as logos do cabeçalho */
+.header-logo {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    position: absolute;
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+}
+
+.header-logo.left {
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+.header-logo.right {
+    right: 10px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-color: #1b263b;
+    color: #ffff;
+    font-family: "Playwrite NG Modern", cursive;
+    -webkit-box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    -moz-box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    box-shadow: 0px 10px 44px 5px rgba(18,26,56,0.69);
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 30px; /* Adiciona espaço entre os blocos */
+}
+
+
+body.dark-mode header {
+    background-color: #0e1e2c;
+}
+
+.blocos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre os blocos */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.bloco1, .bloco2 {
+    text-align: center;
+    border: 2px solid #415A77;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%; /* Limite máximo de largura */
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.bloco3, .bloco4  {
+    text-align: center;
+    border: 2px solid #415A77;
+    border-radius: 20px;
+    padding: 10px;
+    width: 750px;
+    max-width: 100%; /* Limite máximo de largura */
+    background-color: #ffffff;
+    color: #000000;
+}
+    .bloco5{
+    text-align: center;
+    border: 2px solid #415A77;
+    border-radius: 20px;
+    padding: 10px;
+    width: 800px;
+    max-width: 100%; /* Limite máximo de largura */
+    margin-left: 500px;
+    background-color: #ffffff;
+    color: #000000;
+    }
+
+body.dark-mode .bloco3 {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+body.dark-mode .bloco4 {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+body.dark-mode .bloco5 {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto; /* Para rolagem horizontal se necessário */
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+
+
+body.dark-mode .bloco1, body.dark-mode .bloco2 {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.form-container {
+    border: 2px solid #415A77;
+    padding: 20px;
+    width: 94%;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode .form-container {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.submit-btn {
+    background-color: #2c3e50;
+    width: 125px;
+    height: 45px;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+body.dark-mode .submit-btn {
+    background-color: #1b263b;
+    color: #ffffff;
+}
+
+.filter-achromatomaly {
+    filter: grayscale(100%);
+}
+
+.filter-deuteranomaly {
+    filter: hue-rotate(180deg);
+}
+
+.filter-tritanomaly {
+    filter: sepia(100%) saturate(300%) hue-rotate(-50deg);
+}
+
+.filter-acromatomy {
+    filter: grayscale(55%);
+}
+ 
+.filter-deuteranopy {
+    filter: hue-rotate(100deg) saturate(100%);
+}
+ 
+.filter-protanopy {
+    filter: sepia(35%) saturate(100%);
+}
+
